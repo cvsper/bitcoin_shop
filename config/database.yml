@@ -1,12 +1,12 @@
 default: &default
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   pool: 5
 
 development:
   <<: *default
   username: root
-  password: root
+  password: 7
   database: rails_shop_example_development
 
 test:

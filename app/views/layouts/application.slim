@@ -23,15 +23,15 @@ html
             small = currency_rate_info
         li.dropdown
           a.dropdown-toggle href="javascript:;" data-toggle="dropdown"
-            =' currency_icon(current_currency.downcase)
-            =' current_currency
+            =>' currency_icon(current_currency.downcase)
+            =>' current_currency
             b.caret
           ul.dropdown-menu role="menu"
             - currencies.each do |iso, data|
               li = link_to currency_icon(iso) + ' ' + data[:title], set_currency_path(iso.upcase), method: :post
         li.dropdown
           a.dropdown-toggle href="javascript:;" data-toggle="dropdown"
-            =' fa_icon('user')
+            =>' fa_icon('user')
             | My Account
             b.caret
           ul.dropdown-menu role="menu"

@@ -4,7 +4,7 @@
       li
         .clearfix
           ' #{cart_item.quantity} x
-          =' cart_item.item.title.truncate(17)
+          =>' cart_item.item.title.truncate(17)
           .pull-right
             span.text-primary
               = formatted_price(cart_item.total_price)
